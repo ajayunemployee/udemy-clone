@@ -142,7 +142,9 @@ body{
     padding: 10px;
 }
 .course-card {
-    width: 256px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5%;
 }
 .course-card img{
     height: 50%;
@@ -203,3 +205,25 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+ /*Media queries*/
+
+ @media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    
+ }
+ @media screen and (max-width:600px) {
+    .course-card{
+        flex-basis:40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+
+        display: none;
+    }
+    
+ }
